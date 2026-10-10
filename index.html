@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuncay ERGİN | Yaşlı ve Engelli Bakımı &amp; Vasilik Yönetimi</title>
+<meta name="description" content="Yaşlı ve Engelli Bakımı & Vasilik Yönetimi. Sosyal hizmet alanında 20 yılı aşkın deneyim.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#070b14; --navy2:#111a2b; --ink:#0f172a; --muted:#475569;
+  --line:#e2e8f0; --soft:#f6f8fb; --blue:#2563eb; --green:#22c55e; --white:#fff;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+/* top bar */
+header.top{position:absolute;top:0;left:0;right:0;z-index:5}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:20px;flex-wrap:wrap}
+.brand{color:#fff;font-weight:600;letter-spacing:.2px;text-decoration:none}
+.brand span{color:#60a5fa}
+.langs{display:flex;gap:8px;flex-wrap:wrap}
+.langs button{font:500 13px var(--sans);color:#e2e8f0;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:6px 14px;cursor:pointer}
+.langs button:hover{background:rgba(255,255,255,.18)}
+.langs button[aria-pressed="true"]{background:#fff;color:var(--ink);border-color:#fff}
+
+/* hero */
+.hero{background:radial-gradient(1200px 500px at 50% -10%,#16233d 0%,var(--navy) 60%);color:#fff;text-align:center;padding:150px 0 100px}
+.tag{display:inline-block;font-size:13px;color:#cbd5e1;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 16px;margin-bottom:28px}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,5.2vw,54px);line-height:1.15;margin:0 auto 22px;max-width:18ch}
+.hero p{max-width:60ch;margin:0 auto 34px;color:#cbd5e1;font-size:clamp(16px,2vw,19px)}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 15px var(--sans);text-decoration:none;border-radius:999px;padding:13px 26px;border:0;cursor:pointer}
+.btn-white{background:#fff;color:var(--ink)}
+.btn-white:hover{background:#e2e8f0}
+
+/* sections */
+section{padding:84px 0}
+h2{font-family:var(--serif);font-size:clamp(26px,3.4vw,36px);margin:0 0 18px;line-height:1.2}
+
+.about .grid{display:grid;grid-template-columns:240px 1fr;gap:56px;align-items:center}
+.avatar{width:160px;height:160px;border-radius:50%;background:var(--navy2);display:grid;place-items:center;margin:0 auto;box-shadow:0 14px 34px rgba(15,23,42,.25)}
+.avatar svg{width:64px;height:64px;stroke:#fff}
+.about p{margin:0 0 14px;color:var(--muted);max-width:68ch}
+.stats{display:flex;gap:14px;margin-top:22px;flex-wrap:wrap}
+.stat{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px 26px;text-align:center;min-width:150px}
+.stat b{display:block;font-family:var(--serif);font-size:30px;line-height:1.1}
+.stat span{font-size:13px;color:var(--muted)}
+
+.services{background:var(--soft)}
+.services .head{text-align:center;max-width:70ch;margin:0 auto 46px}
+.services .head p{color:var(--muted);margin:0}
+.bar{width:44px;height:3px;background:var(--blue);margin:20px auto 0;border-radius:2px}
+.cards{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.card{grid-column:span 2;background:#fff;border:1px solid var(--line);border-top:3px solid var(--ink);border-radius:10px;padding:24px;display:flex;flex-direction:column;gap:12px}
+.card:nth-child(4),.card:nth-child(5){grid-column:span 3}
+.ico{width:38px;height:38px;border-radius:9px;background:#eaf1ff;display:grid;place-items:center}
+.ico svg{width:20px;height:20px;stroke:var(--blue)}
+.card h3{font-size:16px;line-height:1.35;margin:0}
+.card p{font-size:14.5px;color:var(--muted);margin:0;flex:1}
+.price{align-self:flex-start;font-size:12.5px;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+
+.contact{text-align:center}
+.box{max-width:620px;margin:0 auto;background:var(--navy2);color:#fff;border-radius:18px;padding:44px 30px;box-shadow:0 24px 50px rgba(15,23,42,.28)}
+.box .circle{width:54px;height:54px;border-radius:50%;background:#fff;display:grid;place-items:center;margin:0 auto 18px}
+.box .circle svg{width:26px;height:26px;stroke:var(--ink)}
+.box h2{color:#fff}
+.box p{color:#cbd5e1;margin:0 auto 20px;max-width:52ch}
+.box .name{color:#fff;font-weight:600;margin:6px 0 0}
+.box .role{font-size:14px;color:#93c5fd;margin:0 0 26px}
+.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-wa{background:var(--green);color:#052e13}
+.btn-wa:hover{background:#4ade80}
+.btn-mail{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
+.btn-mail:hover{background:rgba(255,255,255,.12)}
+.btn svg{width:18px;height:18px;stroke:currentColor}
+
+footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;font-size:13.5px;color:var(--muted)}
+footer p{margin:2px 0}
+
+@media (max-width:860px){
+  .about .grid{grid-template-columns:1fr;gap:30px}
+  .cards{grid-template-columns:1fr}
+  .card,.card:nth-child(4),.card:nth-child(5){grid-column:auto}
+  .hero{padding:170px 0 80px}
+  section{padding:64px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">Tuncay <span>ERGİN</span></a>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-lang="de">🇩🇪 Deutsch</button>
+      <button type="button" data-lang="en">🇬🇧 English</button>
+      <button type="button" data-lang="fr">🇫🇷 Français</button>
+      <button type="button" data-lang="tr">🇹🇷 Türkçe</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <span class="tag" data-i="tag"></span>
+    <h1 data-i="h1"></h1>
+    <p data-i="lead"></p>
+    <a class="btn btn-white" href="#kontakt" data-i="cta"></a>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="wrap grid">
+    <div class="avatar" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 14h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16"/><path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 15 6 6"/><path d="M19.5 8.5c.7-.7 1.5-1.6 1.5-2.7A2.73 2.73 0 0 0 16 4a2.78 2.78 0 0 0-5 1.8c0 1.2.8 2 1.5 2.8L16 12Z"/></svg>
+    </div>
+    <div>
+      <h2 data-i="aboutH"></h2>
+      <p data-i="about1"></p>
+      <p data-i="about2"></p>
+      <p data-i="about3"></p>
+      <div class="stats">
+        <div class="stat"><b>20</b><span data-i="stat1"></span></div>
+        <div class="stat"><b>15</b><span data-i="stat2"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="leistungen">
+  <div class="wrap">
+    <div class="head">
+      <h2 data-i="servH"></h2>
+      <p data-i="servP"></p>
+      <div class="bar"></div>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.9.7-1.9 1-3 1s-2.1-.3-3-1Z"/><path d="m2 16 3-8 3 8c-.9.7-1.9 1-3 1s-2.1-.3-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg></div>
+        <h3 data-i="s1t"></h3><p data-i="s1p"></p><span class="price" data-i="price"></span>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg></div>
+        <h3 data-i="s2t"></h3><p data-i="s2p"></p><span class="price" data-i="price"></span>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+        <h3 data-i="s3t"></h3><p data-i="s3p"></p><span class="price" data-i="price"></span>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4M10 10h4M10 14h4M10 18h4"/></svg></div>
+        <h3 data-i="s4t"></h3><p data-i="s4p"></p><span class="price" data-i="price"></span>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H9a1 1 0 0 0-1 1v2c0 .6.4 1 1 1h6c.6 0 1-.4 1-1V3c0-.6-.4-1-1-1Z"/><path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2"/><path d="m9 14 2 2 4-4"/></svg></div>
+        <h3 data-i="s5t"></h3><p data-i="s5p"></p><span class="price" data-i="price"></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="kontakt">
+  <div class="wrap">
+    <div class="box">
+      <div class="circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+      <h2 data-i="contH"></h2>
+      <p data-i="contP"></p>
+      <p class="name">Tuncay ERGİN</p>
+      <p class="role" data-i="role"></p>
+      <div class="actions">
+        <a class="btn btn-wa" id="wa" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+          <span data-i="wa"></span></a>
+        <a class="btn btn-mail" id="mail">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <span data-i="mail"></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-i="rights"></p>
+    <p data-i="dev"></p>
+  </div>
+</footer>
+
+<script>
+/* ====== BURAYI DÜZENLEYİN: WhatsApp ve e-posta ====== */
+var WHATSAPP_URL = "https://wa.me/905402951898";
+var EMAIL        = "shutuncayergin@gmail.com";
+/* ==================================================== */
+
+var T = {
+de:{
+  tag:"Türkei · Für Expats, Investoren & lokale Anwälte",
+  h1:"Senioren- und Behindertenbetreuung & Vormundschaftsmanagement in der Türkei",
+  lead:"Mehr als 20 Jahre Erfahrung im Sozialwesen – damit Ihre älteren oder behinderten Angehörigen und Mandanten in der Türkei zuverlässig versorgt und rechtlich gut vertreten sind.",
+  cta:"Jetzt Kontakt aufnehmen",
+  aboutH:"Über mich",
+  about1:"Mein Name ist Tuncay ERGİN. Ich bin seit 20 Jahren als Sozialarbeits-Spezialist tätig und habe in dieser Zeit hunderte Familien mit älteren und behinderten Angehörigen in schwierigen Lebenssituationen begleitet.",
+  about2:"15 Jahre lang war ich als Verantwortlicher Manager eines privaten Pflegezentrums für Menschen mit Behinderungen in der Türkei tätig. Diese Erfahrung hat mir ein tiefes Verständnis für pflegerische, rechtliche und menschliche Bedürfnisse vermittelt.",
+  about3:"Heute unterstütze ich Expats und lokale Anwälte dabei, sicherzustellen, dass ältere und behinderte Angehörige sowie Mandanten in der Türkei würdevoll, sicher und rechtlich korrekt betreut werden – und berate Investoren beim Aufbau und Betrieb privater Pflegezentren.",
+  stat1:"Jahre Sozialarbeit", stat2:"Jahre Verantwortlicher Manager",
+  servH:"Meine Leistungen",
+  servP:"Umfassende Unterstützung in der Alten- und Behindertenbetreuung sowie Unternehmensberatung für Investoren privater Pflegezentren – zuverlässig vor Ort, transparent für Sie. Alle Leistungen werden projektbasiert und nach individueller Beratung bepreist.",
+  s1t:"Vormundschaft & Gerichtsmanagement (Alten- und Behindertenfürsorge)",
+  s1p:"Professionelle Vorbereitung der obligatorischen jährlichen Vormundschaftskontobücher und Vermögensberichte für türkische Zivilgerichte (Sulh Hukuk Mahkemeleri). Volle Koordination mit Familienanwälten.",
+  s2t:"Medizinische Logistik & Medikamentenverfolgung",
+  s2p:"Strikte Nachverfolgung von Arztterminen, Verwaltung der Krankenhauslogistik, Beschaffung von verschreibungspflichtigen Medikamenten und speziellen medizinischen Geräten.",
+  s3t:"Haushaltsmanagement & Offizielle Transaktionen",
+  s3p:"Komplette Koordination der professionellen Hausreinigung, Instandhaltung, Zahlung von Strom-, Wasser-, Gas- und Internetrechnungen sowie Abwicklung aller offiziellen bürokratischen Behördengänge in der Türkei.",
+  s4t:"Beratung zur Gründung & Lizenzierung von Pflegezentren",
+  s4p:"Umfassende institutionelle Begleitung für lokale und internationale Investoren. Auswahl von Grundstück und Gebäude gemäß den Vorschriften des Ministeriums, Optimierung des Architekturprojekts, Zusammenstellung der Lizenzunterlagen und durchgängige Steuerung der offiziellen Eröffnungsgenehmigungen.",
+  s5t:"Betriebsprüfung & Vorab-Inspektion „Check-Up“",
+  s5p:"Spezialisierte rechtliche Prüfdienstleistungen für aktive private Pflegeeinrichtungen vor den offiziellen Inspektionen des Ministeriums. Umfassende rechtliche Überprüfung von Patientenakten, Dienstplänen des Personals, Sozialdiensten und Unterlagen der Gesundheitseinheit, um 100 % Regelkonformität sicherzustellen.",
+  price:"Preisgestaltung: Projektbasiert & nach Beratung",
+  contH:"Kontakt",
+  contP:"Sprechen wir über die Situation Ihrer älteren oder behinderten Angehörigen oder Mandanten – oder über Ihr Investitionsprojekt für ein privates Pflegezentrum. Schreiben Sie mir – ich antworte persönlich.",
+  role:"Sozialarbeits-Spezialist · Betreuungsmanagement",
+  wa:"WhatsApp Support", mail:"E-Mail senden",
+  rights:"© 2026 Tuncay ERGİN. Alle Rechte vorbehalten.", dev:"Entwickelt von Tuncay ERGİN"
+},
+en:{
+  tag:"Turkey · For Expats, Investors & Local Lawyers",
+  h1:"Elderly and Disabled Care & Legal Guardianship Management",
+  lead:"Over 20 years of experience in social work – ensuring your elderly or disabled loved ones and clients in Turkey are reliably cared for and legally well represented.",
+  cta:"Get in Touch",
+  aboutH:"About Me",
+  about1:"My name is Tuncay ERGİN. I have worked as a Social Work Specialist for 20 years, guiding hundreds of families with elderly and disabled relatives through challenging life situations.",
+  about2:"For 15 years, I served as Responsible Manager of a private care center for people with disabilities in Turkey. This experience gave me a deep understanding of care, legal, and human needs.",
+  about3:"Today I support expats and local lawyers in ensuring that elderly and disabled relatives and clients in Turkey receive dignified, safe, and legally correct care – and I advise investors on establishing and operating private care centers.",
+  stat1:"Years in Social Work", stat2:"Years as Responsible Manager",
+  servH:"My Services",
+  servP:"Comprehensive Elderly and Disabled Care support plus corporate consultancy for investors in private care centers – reliable on the ground, transparent for you. All services are priced on a project basis and upon individual consultation.",
+  s1t:"Legal Guardianship & Court Reporting (Elderly & Disabled)",
+  s1p:"Expert preparation of mandatory annual guardianship account books and asset reports required by Turkish Civil Courts (Sulh Hukuk Mahkemeleri). Full coordination with family lawyers.",
+  s2t:"Healthcare Logistics & Medical Tracking",
+  s2p:"Strict tracking of medical appointments, managing hospital logistics, sourcing prescription medications, and specialized medical devices (wheelchairs, oxygen concentrators, etc.).",
+  s3t:"Household Management & Official Transactions",
+  s3p:"Complete coordination of professional home cleaning, maintenance, utility bill payments (electricity, water, gas, internet), and execution of all official bureaucratic transactions in Turkey.",
+  s4t:"Care Center Establishment & Licensing Consultancy",
+  s4p:"Full institutional guidance for local and international investors. Land and building selection according to Ministry regulations, architectural project optimization, compilation of the licensing portfolio, and end-to-end management of official opening approvals.",
+  s5t:"Operational Audit & Pre-Inspection “Check-Up”",
+  s5p:"Dedicated legal audit services for active private care facilities prior to official Ministry inspections. Comprehensive legal review of patient portfolios, staff shifts, social services, and health unit records to ensure 100% regulatory compliance.",
+  price:"Pricing: Project-Based & Upon Consultation",
+  contH:"Contact",
+  contP:"Let's talk about the situation of your elderly or disabled loved ones or clients – or about your investment project for a private care center. Write to me – I will reply personally.",
+  role:"Social Work Specialist · Care Management",
+  wa:"WhatsApp Support", mail:"Send Email",
+  rights:"© 2026 Tuncay ERGİN. All rights reserved.", dev:"Developed by Tuncay ERGİN"
+},
+fr:{
+  tag:"Turquie · Pour les expatriés, investisseurs & avocats locaux",
+  h1:"Accompagnement des Aînés et des Personnes Handicapées & Gestion de la Tutelle en Turquie",
+  lead:"Plus de 20 ans d'expérience dans le travail social – pour que vos proches âgés ou handicapés, ainsi que vos clients en Turquie, soient bien pris en charge et juridiquement bien représentés.",
+  cta:"Nous contacter",
+  aboutH:"À propos de moi",
+  about1:"Je m'appelle Tuncay ERGİN. Je travaille depuis 20 ans en tant que spécialiste du travail social et j'ai accompagné des centaines de familles ayant des proches âgés ou handicapés dans des situations de vie difficiles.",
+  about2:"Pendant 15 ans, j'ai été directeur responsable d'un centre de soins privé pour personnes en situation de handicap en Turquie. Cette expérience m'a apporté une compréhension approfondie des besoins en matière de soins, de droit et d'humanité.",
+  about3:"Aujourd'hui, j'aide les expatriés et les avocats locaux à garantir que leurs proches âgés ou handicapés, ainsi que leurs clients en Turquie, bénéficient d'une prise en charge digne, sûre et juridiquement conforme – et je conseille les investisseurs dans la création et l'exploitation de centres de soins privés.",
+  stat1:"Ans en travail social", stat2:"Ans comme directeur responsable",
+  servH:"Mes services",
+  servP:"Un accompagnement complet pour les aînés et les personnes handicapées, ainsi qu'un conseil aux entreprises pour les investisseurs de centres de soins privés – fiable sur place, transparent pour vous. Tous les services sont tarifés par projet et après consultation individuelle.",
+  s1t:"Gestion de la Tutelle & Rapports Juridiques (Aînés et Handicapés)",
+  s1p:"Préparation experte des rapports annuels de tutelle et des états du patrimoine exigés par les tribunaux civils turcs (Sulh Hukuk Mahkemeleri). Coordination complète avec les avocats.",
+  s2t:"Logistique de Santé & Suivi Médical",
+  s2p:"Suivi rigoureux des rendez-vous médicaux, gestion de la logistique hospitalière, approvisionnement en médicaments sur ordonnance et dispositifs médicaux spécialisés.",
+  s3t:"Gestion Domestique & Transactions Officielles",
+  s3p:"Coordination complète du nettoyage professionnel de la maison, de l'entretien, du paiement des factures (électricité, eau, gaz, internet) et gestion de toutes les transactions administratives officielles en Turquie.",
+  s4t:"Conseil en Création & Autorisation de Centres de Soins",
+  s4p:"Accompagnement institutionnel complet pour les investisseurs locaux et internationaux. Sélection du terrain et du bâtiment selon la réglementation du Ministère, optimisation du projet architectural, constitution du dossier d'autorisation et gestion de bout en bout des approbations officielles d'ouverture.",
+  s5t:"Audit Opérationnel & « Check-Up » de Pré-Inspection",
+  s5p:"Services d'audit juridique dédiés aux établissements de soins privés en activité, avant les inspections officielles du Ministère. Examen juridique complet des dossiers des patients, des plannings du personnel, des services sociaux et des registres de l'unité de santé afin de garantir une conformité réglementaire à 100 %.",
+  price:"Tarification : par projet & sur consultation",
+  contH:"Contact",
+  contP:"Parlons de la situation de vos proches âgés ou handicapés, ou de vos clients – ou de votre projet d'investissement dans un centre de soins privé. Écrivez-moi – je vous répondrai personnellement.",
+  role:"Spécialiste du travail social · Gestion des soins",
+  wa:"Assistance WhatsApp", mail:"Envoyer un e-mail",
+  rights:"© 2026 Tuncay ERGİN. Tous droits réservés.", dev:"Développé par Tuncay ERGİN"
+},
+tr:{
+  tag:"Türkiye · Gurbetçiler, Yatırımcılar & Yerel Avukatlar İçin",
+  h1:"Yaşlı ve Engelli Bakımı & Vasilik Yönetimi",
+  lead:"Sosyal hizmet alanında 20 yılı aşkın deneyim – Türkiye'deki yaşlı veya engelli yakınlarınızın ve müvekkillerinizin güvenilir biçimde bakım görmesi ve hukuken doğru temsil edilmesi için.",
+  cta:"İletişime Geçin",
+  aboutH:"Hakkımda",
+  about1:"Adım Tuncay ERGİN. 20 yıldır Sosyal Hizmet Uzmanı olarak görev yapıyorum ve bu süre boyunca zor yaşam koşullarındaki, yaşlı ve engelli yakınları olan yüzlerce aileye rehberlik ettim.",
+  about2:"15 yıl boyunca Türkiye'de engelli bireylere hizmet veren özel bir bakım merkezinde Sorumlu Müdür olarak görev yaptım. Bu deneyim bana bakım, hukuk ve insani ihtiyaçlar konusunda derin bir anlayış kazandırdı.",
+  about3:"Bugün, yurt dışında yaşayan gurbetçilere ve yerel avukatlara, Türkiye'deki yaşlı ve engelli yakınlarının ve müvekkillerinin onurlu, güvenli ve hukuka uygun biçimde bakım görmesini sağlamalarında destek oluyorum; ayrıca özel bakım merkezi kurmak ve işletmek isteyen yatırımcılara danışmanlık veriyorum.",
+  stat1:"Yıl Sosyal Hizmet", stat2:"Yıl Sorumlu Müdür",
+  servH:"Hizmetlerim",
+  servP:"Yaşlı ve Engelli Bakımı için kapsamlı destek ile özel bakım merkezi yatırımcıları için kurumsal danışmanlık – sahada güvenilir, sizin için şeffaf. Tüm hizmetler proje bazlı olarak ve birebir görüşme sonrasında fiyatlandırılır.",
+  s1t:"Vasilik ve Mahkeme Süreçleri Yönetimi (Yaşlı & Engelli)",
+  s1p:"Türk Sulh Hukuk Mahkemeleri tarafından talep edilen zorunlu yıllık vasi defterlerinin ve mal varlığı raporlarının uzmanlıkla hazırlanması. Aile avukatlarıyla tam koordinasyon.",
+  s2t:"Sağlık Lojistiği ve Tıbbi Bakım Takibi",
+  s2p:"Tıbbi randevuların sıkı takibi, hastane lojistiğinin yönetilmesi, reçeteli ilaçların ve özel tıbbi cihazların (tekerlekli sandalye, oksijen konsantratörü vb.) temini.",
+  s3t:"Ev Yönetimi ve Resmi İşlem Takibi",
+  s3p:"Profesyonel ev temizliği, bakım-onarım işleri, fatura ödemelerinin (elektrik, su, doğalgaz, internet) eksiksiz koordinasyonu ve Türkiye'deki tüm resmi bürokratik işlemlerin yapılması.",
+  s4t:"Bakım Merkezi Kuruluş ve Ruhsatlandırma Danışmanlığı",
+  s4p:"Yerli ve yabancı yatırımcılar için kapsamlı kurumsal rehberlik. Bakanlık mevzuatına uygun arsa ve bina seçimi, mimari proje optimizasyonu, ruhsatlandırma dosyasının hazırlanması ve resmi açılış onaylarının uçtan uca yönetimi.",
+  s5t:"Kurumsal İşleyiş ve Ön Denetim Danışmanlığı (“Check-Up”)",
+  s5p:"Faal özel bakım kuruluşları için, Bakanlığın resmi denetimlerinden önce yürütülen yasal denetim hizmetleri. Hasta dosyalarının, personel vardiyalarının, sosyal hizmet ve sağlık birimi kayıtlarının kapsamlı yasal incelemesi ile %100 mevzuat uyumunun sağlanması.",
+  price:"Fiyatlandırma: Proje Bazlı / Görüşmeye Dayalı",
+  contH:"İletişim",
+  contP:"Yaşlı veya engelli yakınlarınızın ya da müvekkillerinizin durumunu – veya özel bakım merkezi yatırım projenizi – konuşalım. Bana yazın – size bizzat yanıt vereceğim.",
+  role:"Sosyal Hizmet Uzmanı · Bakım Yönetimi",
+  wa:"WhatsApp Destek", mail:"E-posta Gönder",
+  rights:"© 2026 Tuncay ERGİN. Tüm hakları saklıdır.", dev:"Geliştiren: Tuncay ERGİN"
+}
+};
+
+function setLang(l){
+  if(!T[l]) l="tr";
+  var d=T[l];
+  document.documentElement.lang=l;
+  document.querySelectorAll("[data-i]").forEach(function(el){
+    var k=el.getAttribute("data-i"); if(d[k]!==undefined) el.textContent=d[k];
+  });
+  document.querySelectorAll(".langs button").forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.lang===l ? "true":"false");
+  });
+  document.title="Tuncay ERGİN | "+d.h1;
+}
+document.querySelectorAll(".langs button").forEach(function(b){
+  b.addEventListener("click",function(){ setLang(b.dataset.lang); });
+});
+document.getElementById("wa").href=WHATSAPP_URL;
+document.getElementById("mail").href="mailto:"+EMAIL;
+var start="tr";
+setLang(start);
+</script>
+</body>
+</html>
