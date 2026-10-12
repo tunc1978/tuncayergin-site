@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tuncay ERGİN | Yaşlı ve Engelli Bakımı &amp; Vasilik Yönetimi</title>
-<meta name="description" content="Yaşlı ve Engelli Bakımı & Vasilik Yönetimi. Sosyal hizmet alanında 20 yılı aşkın deneyim.">
+<title>Tuncay ERGİN | Yaşlı ve Engelli Bakımı &amp; Vesayet İşleri Yönetimi</title>
+<meta name="description" content="Yaşlı ve Engelli Bakımı & Vesayet İşleri Yönetimi. Sosyal hizmet alanında 20 yılı aşkın deneyim.">
 <meta name="theme-color" content="#0b1f2a">
 <link rel="canonical" href="https://tuncayergin.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Tuncay ERGİN">
 <meta property="og:url" content="https://tuncayergin.com/">
-<meta property="og:title" content="Tuncay ERGİN | Yaşlı ve Engelli Bakımı & Vasilik Yönetimi">
+<meta property="og:title" content="Tuncay ERGİN | Yaşlı ve Engelli Bakımı & Vesayet İşleri Yönetimi">
 <meta property="og:description" content="Sosyal hizmet alanında 20 yılı aşkın deneyim – Türkiye'deki yaşlı veya engelli yakınlarınızın güvenilir biçimde bakım görmesi için.">
 <meta property="og:image" content="https://tuncayergin.com/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -50,9 +50,9 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 .langs button[aria-pressed="true"]{background:#fff;color:var(--ink);border-color:#fff}
 
 /* hero */
-.hero{background:radial-gradient(1200px 520px at 50% -10%,#17414f 0%,var(--navy) 62%);color:#fff;text-align:center;padding:150px 0 100px}
+.hero{--hero-photo:none;background:var(--hero-photo),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='520' viewBox='0 0 520 520' fill='none' stroke='%235eead4' stroke-opacity='.10' stroke-width='1.2'%3E%3Ccircle cx='0' cy='0' r='120'/%3E%3Ccircle cx='0' cy='0' r='190'/%3E%3Ccircle cx='0' cy='0' r='260'/%3E%3Ccircle cx='520' cy='520' r='120'/%3E%3Ccircle cx='520' cy='520' r='190'/%3E%3Ccircle cx='520' cy='520' r='260'/%3E%3C/svg%3E"),radial-gradient(1200px 520px at 50% -10%,#17414f 0%,var(--navy) 62%);background-size:cover,520px 520px,auto;color:#fff;text-align:center;padding:150px 0 100px}
 .tag{display:inline-block;font-size:13px;color:#cbd5e1;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 16px;margin-bottom:28px}
-.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,5.2vw,54px);line-height:1.15;margin:0 auto 22px;max-width:18ch}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,5.2vw,54px);line-height:1.15;margin:0 auto 22px;max-width:22ch;overflow-wrap:break-word;hyphens:auto}
 .hero p{max-width:60ch;margin:0 auto 34px;color:#cbd5e1;font-size:clamp(16px,2vw,19px)}
 .btn{display:inline-flex;align-items:center;gap:10px;font:600 15px var(--sans);text-decoration:none;border-radius:999px;padding:13px 26px;border:0;cursor:pointer}
 .btn-white{background:#fff;color:var(--ink)}
@@ -72,7 +72,7 @@ h2{font-family:var(--serif);font-size:clamp(26px,3.4vw,36px);margin:0 0 18px;lin
 .stat b{display:block;font-family:var(--serif);font-size:30px;line-height:1.1}
 .stat span{font-size:13px;color:var(--muted)}
 
-.services{background:var(--soft)}
+.services{background:var(--soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28'%3E%3Ccircle cx='2' cy='2' r='1.2' fill='%230f766e' fill-opacity='.07'/%3E%3C/svg%3E")}
 .services .head{text-align:center;max-width:70ch;margin:0 auto 46px}
 .services .head p{color:var(--muted);margin:0}
 .bar{width:44px;height:3px;background:var(--blue);margin:20px auto 0;border-radius:2px}
@@ -212,7 +212,6 @@ footer p{margin:2px 0}
 <footer>
   <div class="wrap">
     <p data-i="rights"></p>
-    <p data-i="dev"></p>
   </div>
 </footer>
 
@@ -227,119 +226,115 @@ var EMAIL        = "info@tuncayergin.com";
 var T = {
 de:{
   tag:"Türkei · Für Expats, Investoren & lokale Anwälte",
-  h1:"Senioren- und Behindertenbetreuung & Vormundschaftsmanagement in der Türkei",
-  lead:"Mehr als 20 Jahre Erfahrung im Sozialwesen – damit Ihre älteren oder behinderten Angehörigen und Mandanten in der Türkei zuverlässig versorgt und rechtlich gut vertreten sind.",
+  h1:"Seniorenbetreuung, Behindertenhilfe & Vormundschaft in der Türkei",
+  lead:"Mehr als 20 Jahre Erfahrung im Sozialwesen – damit Ihre älteren Angehörigen oder Angehörigen mit Behinderung sowie Ihre Mandanten in der Türkei zuverlässig versorgt und alle organisatorischen Angelegenheiten vor Ort gut begleitet sind.",
   cta:"Jetzt Kontakt aufnehmen",
   aboutH:"Über mich",
-  about1:"Mein Name ist Tuncay ERGİN. Ich bin seit 20 Jahren als Sozialarbeits-Spezialist tätig und habe in dieser Zeit hunderte Familien mit älteren und behinderten Angehörigen in schwierigen Lebenssituationen begleitet.",
-  about2:"15 Jahre lang war ich als Verantwortlicher Manager eines privaten Pflegezentrums für Menschen mit Behinderungen in der Türkei tätig. Diese Erfahrung hat mir ein tiefes Verständnis für pflegerische, rechtliche und menschliche Bedürfnisse vermittelt.",
-  about3:"Heute unterstütze ich Expats und lokale Anwälte dabei, sicherzustellen, dass ältere und behinderte Angehörige sowie Mandanten in der Türkei würdevoll, sicher und rechtlich korrekt betreut werden – und berate Investoren beim Aufbau und Betrieb privater Pflegezentren.",
-  stat1:"Jahre Sozialarbeit", stat2:"Jahre Verantwortlicher Manager",
+  about1:"Mein Name ist Tuncay ERGİN. Seit 20 Jahren arbeite ich als Fachkraft für Soziale Arbeit und habe in dieser Zeit hunderte Familien mit älteren Angehörigen oder Angehörigen mit Behinderung in schwierigen Lebenssituationen begleitet.",
+  about2:"15 Jahre lang war ich als verantwortlicher Einrichtungsleiter eines privaten Pflegezentrums für Menschen mit Behinderung in der Türkei tätig. Diese Erfahrung hat mir ein tiefes Verständnis für pflegerische, rechtliche und menschliche Bedürfnisse vermittelt.",
+  about3:"Heute unterstütze ich Expats und lokale Anwälte dabei, dass ältere Angehörige, Angehörige mit Behinderung und Mandanten in der Türkei würdevoll, sicher und fachgerecht betreut werden. Außerdem berate ich Investoren beim Aufbau und Betrieb privater Pflegezentren.",
+  stat1:"Jahre Sozialarbeit", stat2:"Jahre als Einrichtungsleiter",
   servH:"Meine Leistungen",
-  servP:"Umfassende Unterstützung in der Alten- und Behindertenbetreuung sowie Unternehmensberatung für Investoren privater Pflegezentren – zuverlässig vor Ort, transparent für Sie. Alle Leistungen werden projektbasiert und nach individueller Beratung bepreist.",
-  s1t:"Vormundschaft & Gerichtsmanagement (Alten- und Behindertenfürsorge)",
-  s1p:"Professionelle Vorbereitung der obligatorischen jährlichen Vormundschaftskontobücher und Vermögensberichte für türkische Zivilgerichte (Sulh Hukuk Mahkemeleri). Volle Koordination mit Familienanwälten.",
-  s2t:"Medizinische Logistik & Medikamentenverfolgung",
-  s2p:"Strikte Nachverfolgung von Arztterminen, Verwaltung der Krankenhauslogistik, Beschaffung von verschreibungspflichtigen Medikamenten und speziellen medizinischen Geräten.",
-  s3t:"Haushaltsmanagement & Offizielle Transaktionen",
-  s3p:"Komplette Koordination der professionellen Hausreinigung, Instandhaltung, Zahlung von Strom-, Wasser-, Gas- und Internetrechnungen sowie Abwicklung aller offiziellen bürokratischen Behördengänge in der Türkei.",
+  servP:"Umfassende Unterstützung in der Senioren- und Behindertenbetreuung sowie Beratung für Investoren privater Pflegezentren – zuverlässig vor Ort, transparent für Sie. Alle Leistungen werden projektbezogen nach einem persönlichen Beratungsgespräch kalkuliert. Rechtsberatung erfolgt ausschließlich durch zugelassene Anwälte.",
+  s1t:"Vormundschaft nach türkischem Recht & Gerichtskoordination",
+  s1p:"Vorbereitung der jährlichen Rechenschafts- und Vermögensberichte für die türkischen Zivilgerichte (Sulh Hukuk Mahkemeleri) sowie Koordination mit den Familienanwälten. Die rechtliche Beratung bleibt bei Ihren Anwälten.",
+  s2t:"Medizinische Logistik & Medikamentenorganisation",
+  s2p:"Verlässliche Nachverfolgung von Arztterminen, Organisation der Krankenhauslogistik sowie Unterstützung bei der Beschaffung ärztlich verordneter Medikamente und spezieller Hilfsmittel (z. B. Rollstühle, Sauerstoffkonzentratoren).",
+  s3t:"Haushaltsorganisation & Behördengänge",
+  s3p:"Koordination von professioneller Haushaltsreinigung und Instandhaltung, Zahlung von Strom-, Wasser-, Gas- und Internetrechnungen sowie Erledigung aller Behördengänge in der Türkei.",
   s4t:"Beratung zur Gründung & Lizenzierung von Pflegezentren",
-  s4p:"Umfassende institutionelle Begleitung für lokale und internationale Investoren. Auswahl von Grundstück und Gebäude gemäß den Vorschriften des Ministeriums, Optimierung des Architekturprojekts, Zusammenstellung der Lizenzunterlagen und durchgängige Steuerung der offiziellen Eröffnungsgenehmigungen.",
-  s5t:"Betriebsprüfung & Vorab-Inspektion „Check-Up“",
-  s5p:"Spezialisierte rechtliche Prüfdienstleistungen für aktive private Pflegeeinrichtungen vor den offiziellen Inspektionen des Ministeriums. Umfassende rechtliche Überprüfung von Patientenakten, Dienstplänen des Personals, Sozialdiensten und Unterlagen der Gesundheitseinheit, um 100 % Regelkonformität sicherzustellen.",
-  price:"Preisgestaltung: Projektbasiert & nach Beratung",
+  s4p:"Umfassende Begleitung für lokale und internationale Investoren: Auswahl von Grundstück und Gebäude gemäß den Vorschriften des Ministeriums, Optimierung des Architekturprojekts, Zusammenstellung der Lizenzunterlagen und durchgängige Begleitung der offiziellen Eröffnungsgenehmigungen.",
+  s5t:"Betriebs-Check & Vorab-Prüfung („Check-Up“)",
+  s5p:"Fachliche Prüfung aktiver privater Pflegeeinrichtungen vor den offiziellen Inspektionen des Ministeriums: Durchsicht von Patientenakten, Dienstplänen, Sozialdiensten und Unterlagen der Gesundheitseinheit, um Lücken frühzeitig zu erkennen und die Regelkonformität zu verbessern.",
   contH:"Kontakt",
-  contP:"Sprechen wir über die Situation Ihrer älteren oder behinderten Angehörigen oder Mandanten – oder über Ihr Investitionsprojekt für ein privates Pflegezentrum. Schreiben Sie mir – ich antworte persönlich.",
-  role:"Sozialarbeits-Spezialist · Betreuungsmanagement",
-  wa:"WhatsApp Support", mail:"E-Mail senden",
-  rights:"© 2026 Tuncay ERGİN. Alle Rechte vorbehalten.", dev:"Entwickelt von Tuncay ERGİN"
+  contP:"Sprechen wir über die Situation Ihrer älteren Angehörigen, Ihrer Angehörigen mit Behinderung oder Ihrer Mandanten – oder über Ihr Investitionsprojekt für ein privates Pflegezentrum. Schreiben Sie mir, ich antworte persönlich.",
+  role:"Fachkraft für Soziale Arbeit · Pflege- und Betreuungskoordination",
+  wa:"WhatsApp schreiben", mail:"E-Mail senden",
+  rights:"© 2026 Tuncay ERGİN. Alle Rechte vorbehalten."
 },
 en:{
   tag:"Turkey · For Expats, Investors & Local Lawyers",
-  h1:"Elderly and Disabled Care & Legal Guardianship Management",
-  lead:"Over 20 years of experience in social work – ensuring your elderly or disabled loved ones and clients in Turkey are reliably cared for and legally well represented.",
+  h1:"Senior & Disability Care and Guardianship Support in Turkey",
+  lead:"Over 20 years of experience in social work – so that your older relatives, relatives with disabilities and clients in Turkey are reliably cared for and every practical matter on the ground is well handled.",
   cta:"Get in Touch",
   aboutH:"About Me",
-  about1:"My name is Tuncay ERGİN. I have worked as a Social Work Specialist for 20 years, guiding hundreds of families with elderly and disabled relatives through challenging life situations.",
-  about2:"For 15 years, I served as Responsible Manager of a private care center for people with disabilities in Turkey. This experience gave me a deep understanding of care, legal, and human needs.",
-  about3:"Today I support expats and local lawyers in ensuring that elderly and disabled relatives and clients in Turkey receive dignified, safe, and legally correct care – and I advise investors on establishing and operating private care centers.",
-  stat1:"Years in Social Work", stat2:"Years as Responsible Manager",
+  about1:"My name is Tuncay ERGİN. I have worked as a social work specialist for 20 years and have supported hundreds of families with older relatives or relatives with disabilities through difficult life situations.",
+  about2:"For 15 years, I was the responsible facility manager of a private care center for people with disabilities in Turkey. This experience gave me a deep understanding of care-related, legal and human needs.",
+  about3:"Today I help expats and local lawyers ensure that older relatives, relatives with disabilities and clients in Turkey receive dignified, safe and professional care – and I advise investors on setting up and running private care centers.",
+  stat1:"Years in Social Work", stat2:"Years as Facility Manager",
   servH:"My Services",
-  servP:"Comprehensive Elderly and Disabled Care support plus corporate consultancy for investors in private care centers – reliable on the ground, transparent for you. All services are priced on a project basis and upon individual consultation.",
-  s1t:"Legal Guardianship & Court Reporting (Elderly & Disabled)",
-  s1p:"Expert preparation of mandatory annual guardianship account books and asset reports required by Turkish Civil Courts (Sulh Hukuk Mahkemeleri). Full coordination with family lawyers.",
-  s2t:"Healthcare Logistics & Medical Tracking",
-  s2p:"Strict tracking of medical appointments, managing hospital logistics, sourcing prescription medications, and specialized medical devices (wheelchairs, oxygen concentrators, etc.).",
-  s3t:"Household Management & Official Transactions",
-  s3p:"Complete coordination of professional home cleaning, maintenance, utility bill payments (electricity, water, gas, internet), and execution of all official bureaucratic transactions in Turkey.",
-  s4t:"Care Center Establishment & Licensing Consultancy",
-  s4p:"Full institutional guidance for local and international investors. Land and building selection according to Ministry regulations, architectural project optimization, compilation of the licensing portfolio, and end-to-end management of official opening approvals.",
-  s5t:"Operational Audit & Pre-Inspection “Check-Up”",
-  s5p:"Dedicated legal audit services for active private care facilities prior to official Ministry inspections. Comprehensive legal review of patient portfolios, staff shifts, social services, and health unit records to ensure 100% regulatory compliance.",
-  price:"Pricing: Project-Based & Upon Consultation",
+  servP:"Comprehensive support in senior and disability care, plus consulting for investors in private care centers – reliable on the ground, transparent for you. All services are priced per project after a personal consultation. Legal advice is provided exclusively by licensed lawyers.",
+  s1t:"Guardianship under Turkish Law & Court Coordination",
+  s1p:"Preparation of the annual guardianship accounts and asset reports required by Turkish civil courts (Sulh Hukuk Mahkemeleri), in coordination with family lawyers. Legal advice remains with your lawyers.",
+  s2t:"Healthcare Logistics & Medication Organization",
+  s2p:"Reliable tracking of medical appointments, management of hospital logistics, and support in obtaining prescribed medication and specialized medical devices (wheelchairs, oxygen concentrators, etc.).",
+  s3t:"Household Management & Official Procedures",
+  s3p:"Coordination of professional home cleaning and maintenance, payment of utility bills (electricity, water, gas, internet), and handling of official administrative errands in Turkey.",
+  s4t:"Care Center Establishment & Licensing Consulting",
+  s4p:"Comprehensive guidance for local and international investors: selecting land and buildings in line with Ministry regulations, optimizing the architectural project, compiling the licensing file and managing the official opening approvals from start to finish.",
+  s5t:"Operational Check & Pre-Inspection “Check-Up”",
+  s5p:"Professional review of active private care facilities ahead of official Ministry inspections: examining patient files, staff schedules, social services and health unit records to identify gaps early and improve regulatory compliance.",
   contH:"Contact",
-  contP:"Let's talk about the situation of your elderly or disabled loved ones or clients – or about your investment project for a private care center. Write to me – I will reply personally.",
-  role:"Social Work Specialist · Care Management",
-  wa:"WhatsApp Support", mail:"Send Email",
-  rights:"© 2026 Tuncay ERGİN. All rights reserved.", dev:"Developed by Tuncay ERGİN"
+  contP:"Let's talk about the situation of your older relatives, your relatives with disabilities or your clients – or about your investment project for a private care center. Write to me – I will reply personally.",
+  role:"Social Work Specialist · Care Coordination",
+  wa:"WhatsApp Message", mail:"Send Email",
+  rights:"© 2026 Tuncay ERGİN. All rights reserved."
 },
 fr:{
-  tag:"Turquie · Pour les expatriés, investisseurs & avocats locaux",
-  h1:"Accompagnement des Aînés et des Personnes Handicapées & Gestion de la Tutelle en Turquie",
-  lead:"Plus de 20 ans d'expérience dans le travail social – pour que vos proches âgés ou handicapés, ainsi que vos clients en Turquie, soient bien pris en charge et juridiquement bien représentés.",
-  cta:"Nous contacter",
+  tag:"Turquie · Pour expatriés, investisseurs & avocats locaux",
+  h1:"Accompagnement des seniors et des personnes en situation de handicap & suivi des tutelles en Turquie",
+  lead:"Plus de 20 ans d'expérience dans le travail social – pour que vos proches âgés ou en situation de handicap, ainsi que vos clients en Turquie, soient pris en charge de manière fiable et que toutes les démarches sur place soient bien accompagnées.",
+  cta:"Me contacter",
   aboutH:"À propos de moi",
-  about1:"Je m'appelle Tuncay ERGİN. Je travaille depuis 20 ans en tant que spécialiste du travail social et j'ai accompagné des centaines de familles ayant des proches âgés ou handicapés dans des situations de vie difficiles.",
-  about2:"Pendant 15 ans, j'ai été directeur responsable d'un centre de soins privé pour personnes en situation de handicap en Turquie. Cette expérience m'a apporté une compréhension approfondie des besoins en matière de soins, de droit et d'humanité.",
-  about3:"Aujourd'hui, j'aide les expatriés et les avocats locaux à garantir que leurs proches âgés ou handicapés, ainsi que leurs clients en Turquie, bénéficient d'une prise en charge digne, sûre et juridiquement conforme – et je conseille les investisseurs dans la création et l'exploitation de centres de soins privés.",
-  stat1:"Ans en travail social", stat2:"Ans comme directeur responsable",
+  about1:"Je m'appelle Tuncay ERGİN. Je travaille depuis 20 ans comme spécialiste du travail social et j'ai accompagné des centaines de familles ayant des proches âgés ou en situation de handicap dans des situations de vie difficiles.",
+  about2:"Pendant 15 ans, j'ai été directeur d'établissement d'un centre de soins privé pour personnes en situation de handicap en Turquie. Cette expérience m'a donné une compréhension approfondie des besoins en matière de soins, de droit et d'humanité.",
+  about3:"Aujourd'hui, j'aide les expatriés et les avocats locaux à garantir que leurs proches âgés ou en situation de handicap, ainsi que leurs clients en Turquie, bénéficient d'une prise en charge digne, sûre et professionnelle – et je conseille les investisseurs dans la création et l'exploitation de centres de soins privés.",
+  stat1:"Ans en travail social", stat2:"Ans comme directeur d'établissement",
   servH:"Mes services",
-  servP:"Un accompagnement complet pour les aînés et les personnes handicapées, ainsi qu'un conseil aux entreprises pour les investisseurs de centres de soins privés – fiable sur place, transparent pour vous. Tous les services sont tarifés par projet et après consultation individuelle.",
-  s1t:"Gestion de la Tutelle & Rapports Juridiques (Aînés et Handicapés)",
-  s1p:"Préparation experte des rapports annuels de tutelle et des états du patrimoine exigés par les tribunaux civils turcs (Sulh Hukuk Mahkemeleri). Coordination complète avec les avocats.",
-  s2t:"Logistique de Santé & Suivi Médical",
-  s2p:"Suivi rigoureux des rendez-vous médicaux, gestion de la logistique hospitalière, approvisionnement en médicaments sur ordonnance et dispositifs médicaux spécialisés.",
-  s3t:"Gestion Domestique & Transactions Officielles",
-  s3p:"Coordination complète du nettoyage professionnel de la maison, de l'entretien, du paiement des factures (électricité, eau, gaz, internet) et gestion de toutes les transactions administratives officielles en Turquie.",
-  s4t:"Conseil en Création & Autorisation de Centres de Soins",
-  s4p:"Accompagnement institutionnel complet pour les investisseurs locaux et internationaux. Sélection du terrain et du bâtiment selon la réglementation du Ministère, optimisation du projet architectural, constitution du dossier d'autorisation et gestion de bout en bout des approbations officielles d'ouverture.",
-  s5t:"Audit Opérationnel & « Check-Up » de Pré-Inspection",
-  s5p:"Services d'audit juridique dédiés aux établissements de soins privés en activité, avant les inspections officielles du Ministère. Examen juridique complet des dossiers des patients, des plannings du personnel, des services sociaux et des registres de l'unité de santé afin de garantir une conformité réglementaire à 100 %.",
-  price:"Tarification : par projet & sur consultation",
+  servP:"Un accompagnement complet pour les seniors et les personnes en situation de handicap, ainsi que du conseil aux investisseurs de centres de soins privés – fiable sur place, transparent pour vous. Tous les services sont tarifés par projet après un échange personnalisé. Le conseil juridique est assuré exclusivement par des avocats habilités.",
+  s1t:"Tutelle selon le droit turc & coordination judiciaire",
+  s1p:"Préparation des comptes annuels de tutelle et des états du patrimoine exigés par les tribunaux civils turcs (Sulh Hukuk Mahkemeleri), en coordination avec les avocats de la famille. Le conseil juridique reste assuré par vos avocats.",
+  s2t:"Logistique de santé & organisation des médicaments",
+  s2p:"Suivi rigoureux des rendez-vous médicaux, gestion de la logistique hospitalière, aide à l'obtention des médicaments prescrits et des dispositifs médicaux spécialisés (fauteuils roulants, concentrateurs d'oxygène, etc.).",
+  s3t:"Gestion du foyer & démarches administratives",
+  s3p:"Coordination du ménage professionnel et de l'entretien, paiement des factures (électricité, eau, gaz, internet) et gestion des démarches administratives officielles en Turquie.",
+  s4t:"Conseil en création & autorisation de centres de soins",
+  s4p:"Accompagnement complet pour les investisseurs locaux et internationaux : choix du terrain et du bâtiment selon la réglementation du Ministère, optimisation du projet architectural, constitution du dossier d'autorisation et suivi de bout en bout des approbations officielles d'ouverture.",
+  s5t:"Audit de fonctionnement & pré-inspection « Check-Up »",
+  s5p:"Examen professionnel des établissements de soins privés en activité avant les inspections officielles du Ministère : revue des dossiers des patients, des plannings du personnel, des services sociaux et des registres de l'unité de santé, afin de repérer les lacunes à temps et d'améliorer la conformité.",
   contH:"Contact",
-  contP:"Parlons de la situation de vos proches âgés ou handicapés, ou de vos clients – ou de votre projet d'investissement dans un centre de soins privé. Écrivez-moi – je vous répondrai personnellement.",
-  role:"Spécialiste du travail social · Gestion des soins",
-  wa:"Assistance WhatsApp", mail:"Envoyer un e-mail",
-  rights:"© 2026 Tuncay ERGİN. Tous droits réservés.", dev:"Développé par Tuncay ERGİN"
+  contP:"Parlons de la situation de vos proches âgés ou en situation de handicap, ou de vos clients – ou de votre projet d'investissement dans un centre de soins privé. Écrivez-moi – je vous répondrai personnellement.",
+  role:"Spécialiste du travail social · Coordination des soins",
+  wa:"Écrire sur WhatsApp", mail:"Envoyer un e-mail",
+  rights:"© 2026 Tuncay ERGİN. Tous droits réservés."
 },
 tr:{
-  tag:"Türkiye · Gurbetçiler, Yatırımcılar & Yerel Avukatlar İçin",
-  h1:"Yaşlı ve Engelli Bakımı & Vasilik Yönetimi",
-  lead:"Sosyal hizmet alanında 20 yılı aşkın deneyim – Türkiye'deki yaşlı veya engelli yakınlarınızın ve müvekkillerinizin güvenilir biçimde bakım görmesi ve hukuken doğru temsil edilmesi için.",
+  tag:"Türkiye · Yurt Dışında Yaşayanlar, Yatırımcılar & Yerel Avukatlar İçin",
+  h1:"Yaşlı ve Engelli Bakımı & Vesayet İşleri Yönetimi",
+  lead:"Sosyal hizmet alanında 20 yılı aşkın deneyim – Türkiye'deki yaşlı veya engelli yakınlarınızın ve müvekkillerinizin güvenilir biçimde bakım görmesi ve tüm süreçlerin yerinde düzenli yürütülmesi için.",
   cta:"İletişime Geçin",
   aboutH:"Hakkımda",
-  about1:"Adım Tuncay ERGİN. 20 yıldır Sosyal Hizmet Uzmanı olarak görev yapıyorum ve bu süre boyunca zor yaşam koşullarındaki, yaşlı ve engelli yakınları olan yüzlerce aileye rehberlik ettim.",
-  about2:"15 yıl boyunca Türkiye'de engelli bireylere hizmet veren özel bir bakım merkezinde Sorumlu Müdür olarak görev yaptım. Bu deneyim bana bakım, hukuk ve insani ihtiyaçlar konusunda derin bir anlayış kazandırdı.",
-  about3:"Bugün, yurt dışında yaşayan gurbetçilere ve yerel avukatlara, Türkiye'deki yaşlı ve engelli yakınlarının ve müvekkillerinin onurlu, güvenli ve hukuka uygun biçimde bakım görmesini sağlamalarında destek oluyorum; ayrıca özel bakım merkezi kurmak ve işletmek isteyen yatırımcılara danışmanlık veriyorum.",
-  stat1:"Yıl Sosyal Hizmet", stat2:"Yıl Sorumlu Müdür",
+  about1:"Adım Tuncay ERGİN. 20 yıldır sosyal hizmet uzmanı olarak görev yapıyorum. Bu sürede yaşlı veya engelli yakını olan ve zor bir dönemden geçen yüzlerce aileye rehberlik ettim.",
+  about2:"15 yıl boyunca Türkiye'de engelli bireylere hizmet veren özel bir bakım merkezinde sorumlu müdür olarak görev yaptım. Bu deneyim bana bakım, hukuk ve insani ihtiyaçlar konusunda derin bir anlayış kazandırdı.",
+  about3:"Bugün yurt dışında yaşayanlara ve yerel avukatlara, Türkiye'deki yaşlı ve engelli yakınlarının ve müvekkillerinin onurlu, güvenli ve profesyonel biçimde bakım görmesini sağlamada destek oluyorum; ayrıca özel bakım merkezi kurmak ve işletmek isteyen yatırımcılara danışmanlık veriyorum.",
+  stat1:"Yıl sosyal hizmet deneyimi", stat2:"Yıl sorumlu müdürlük",
   servH:"Hizmetlerim",
-  servP:"Yaşlı ve Engelli Bakımı için kapsamlı destek ile özel bakım merkezi yatırımcıları için kurumsal danışmanlık – sahada güvenilir, sizin için şeffaf. Tüm hizmetler proje bazlı olarak ve birebir görüşme sonrasında fiyatlandırılır.",
-  s1t:"Vasilik ve Mahkeme Süreçleri Yönetimi (Yaşlı & Engelli)",
-  s1p:"Türk Sulh Hukuk Mahkemeleri tarafından talep edilen zorunlu yıllık vasi defterlerinin ve mal varlığı raporlarının uzmanlıkla hazırlanması. Aile avukatlarıyla tam koordinasyon.",
-  s2t:"Sağlık Lojistiği ve Tıbbi Bakım Takibi",
-  s2p:"Tıbbi randevuların sıkı takibi, hastane lojistiğinin yönetilmesi, reçeteli ilaçların ve özel tıbbi cihazların (tekerlekli sandalye, oksijen konsantratörü vb.) temini.",
+  servP:"Yaşlı ve engelli bakımında kapsamlı destek ile özel bakım merkezi yatırımcılarına danışmanlık – sahada güvenilir, sizin için şeffaf. Tüm hizmetler, birebir görüşme sonrasında proje bazlı fiyatlandırılır. Hukuki danışmanlık yalnızca yetkili avukatlar tarafından verilir.",
+  s1t:"Vesayet İşleri ve Mahkeme Süreçleri Koordinasyonu",
+  s1p:"Türk Sulh Hukuk Mahkemelerinin talep ettiği yıllık vasi hesap raporlarının ve mal varlığı raporlarının hazırlanması; aile avukatlarıyla koordinasyon. Hukuki danışmanlık avukatlarınızda kalır.",
+  s2t:"Sağlık Lojistiği ve İlaç Organizasyonu",
+  s2p:"Tıbbi randevuların düzenli takibi, hastane lojistiğinin yönetimi, doktor tarafından yazılan ilaçların ve özel tıbbi cihazların (tekerlekli sandalye, oksijen konsantratörü vb.) temininde destek.",
   s3t:"Ev Yönetimi ve Resmi İşlem Takibi",
-  s3p:"Profesyonel ev temizliği, bakım-onarım işleri, fatura ödemelerinin (elektrik, su, doğalgaz, internet) eksiksiz koordinasyonu ve Türkiye'deki tüm resmi bürokratik işlemlerin yapılması.",
+  s3p:"Profesyonel ev temizliği ve bakım-onarım işlerinin koordinasyonu, fatura ödemeleri (elektrik, su, doğalgaz, internet) ve Türkiye'deki resmi işlemlerin takibi.",
   s4t:"Bakım Merkezi Kuruluş ve Ruhsatlandırma Danışmanlığı",
-  s4p:"Yerli ve yabancı yatırımcılar için kapsamlı kurumsal rehberlik. Bakanlık mevzuatına uygun arsa ve bina seçimi, mimari proje optimizasyonu, ruhsatlandırma dosyasının hazırlanması ve resmi açılış onaylarının uçtan uca yönetimi.",
-  s5t:"Kurumsal İşleyiş ve Ön Denetim Danışmanlığı (“Check-Up”)",
-  s5p:"Faal özel bakım kuruluşları için, Bakanlığın resmi denetimlerinden önce yürütülen yasal denetim hizmetleri. Hasta dosyalarının, personel vardiyalarının, sosyal hizmet ve sağlık birimi kayıtlarının kapsamlı yasal incelemesi ile %100 mevzuat uyumunun sağlanması.",
-  price:"Fiyatlandırma: Proje Bazlı / Görüşmeye Dayalı",
+  s4p:"Yerli ve yabancı yatırımcılar için kapsamlı kurumsal rehberlik: Bakanlık mevzuatına uygun arsa ve bina seçimi, mimari proje optimizasyonu, ruhsatlandırma dosyasının hazırlanması ve resmi açılış onaylarının uçtan uca yönetimi.",
+  s5t:"Mevzuata Uygunluk Kontrolü ve Ön Denetim (“Check-Up”)",
+  s5p:"Faal özel bakım kuruluşları için Bakanlığın resmi denetimlerinden önce yürütülen uzman incelemesi: hasta dosyaları, personel vardiyaları, sosyal hizmet ve sağlık birimi kayıtları gözden geçirilerek eksikler erken tespit edilir ve mevzuata uyum güçlendirilir.",
   contH:"İletişim",
-  contP:"Yaşlı veya engelli yakınlarınızın ya da müvekkillerinizin durumunu – veya özel bakım merkezi yatırım projenizi – konuşalım. Bana yazın – size bizzat yanıt vereceğim.",
-  role:"Sosyal Hizmet Uzmanı · Bakım Yönetimi",
-  wa:"WhatsApp Destek", mail:"E-posta Gönder",
-  rights:"© 2026 Tuncay ERGİN. Tüm hakları saklıdır.", dev:"Geliştiren: Tuncay ERGİN"
+  contP:"Yaşlı veya engelli yakınlarınızın ya da müvekkillerinizin durumunu – veya özel bakım merkezi yatırım projenizi – konuşalım. Bana yazın, size bizzat yanıt vereceğim.",
+  role:"Sosyal Hizmet Uzmanı · Bakım Koordinasyonu",
+  wa:"WhatsApp'tan Yazın", mail:"E-posta Gönder",
+  rights:"© 2026 Tuncay ERGİN. Tüm hakları saklıdır."
 }
 };
 
