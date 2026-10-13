@@ -62,8 +62,8 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 section{padding:84px 0}
 h2{font-family:var(--serif);font-size:clamp(26px,3.4vw,36px);margin:0 0 18px;line-height:1.2}
 
-.about .grid{display:grid;grid-template-columns:240px 1fr;gap:56px;align-items:center}
-.avatar{width:190px;height:190px;border-radius:50%;background:var(--navy2);display:grid;place-items:center;margin:0 auto;box-shadow:0 0 0 5px #fff,0 0 0 8px var(--blue),0 18px 38px rgba(11,31,42,.28)}
+.about .grid{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:center}
+.avatar{width:260px;height:260px;border-radius:50%;background:var(--navy2);display:grid;place-items:center;margin:0 auto;box-shadow:0 0 0 5px #fff,0 0 0 8px var(--blue),0 18px 38px rgba(11,31,42,.28)}
 .avatar{overflow:hidden}
 .avatar img{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%}
 .about p{margin:0 0 14px;color:var(--muted);max-width:68ch}
@@ -106,6 +106,11 @@ h2{font-family:var(--serif);font-size:clamp(26px,3.4vw,36px);margin:0 0 18px;lin
 footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;font-size:13.5px;color:var(--muted)}
 footer p{margin:2px 0}
 
+@media (max-width:1000px){
+  .about .grid{grid-template-columns:1fr;gap:30px;justify-items:center}
+  .about .grid>div:last-child{width:100%}
+  .avatar{width:min(78vw,300px);height:min(78vw,300px)}
+}
 @media (max-width:860px){
   .about .grid{grid-template-columns:1fr;gap:30px}
   .cards{grid-template-columns:1fr}
@@ -142,7 +147,7 @@ footer p{margin:2px 0}
 
 <section class="about" id="about">
   <div class="wrap grid">
-    <div class="avatar"><img src="avatar.jpg" alt="Tuncay ERGİN – Sosyal Hizmet Uzmanı" width="190" height="190" loading="lazy"></div>
+    <div class="avatar"><img src="avatar.jpg" alt="Tuncay ERGİN – Sosyal Hizmet Uzmanı" width="260" height="260" loading="lazy"></div>
     <div>
       <h2 data-i="aboutH"></h2>
       <p data-i="about1"></p>
